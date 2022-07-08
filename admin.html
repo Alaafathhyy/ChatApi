@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="ThemeStarz">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/selectize.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+
+	<title>Admin Messages</title>
+
+</head>
+<body>
+    <div class="page sub-page">
+         <header class="hero"> 
+            	   <div class="page-title">
+                    <div class="container">
+                        <h1>Messages</h1>
+                    </div>
+				   </div>
+                </div>
+            </div>
+        </header>
+       
+        <!--*********************************************************************************************************-->
+        <!--************ CONTENT ************************************************************************************-->
+        <!--*********************************************************************************************************-->
+        <section class="content">
+            <section class="block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-lg-5 col-xl-4">
+                            <!--============ Section Title===========================================================-->
+                        
+                            <div id="messaging__chat-list" class="messaging__box">
+                                <div class="messaging__header">
+                                    <ul class="nav nav-pills">
+                     
+                                        <li class="nav-item">
+                                            <a id="getProviders" class="nav-link" href="#">Providers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a id="getCustomers" class="nav-link" href="#">Customers</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                                <div class="messaging__content">
+                                    <ul id="person_list" class="messaging__persons-list">
+                                    </ul>
+                                    <!--end messaging__persons-list-->
+                                </div>
+                                <!--messaging__content-->
+                            </div>
+                            <!--end section-title-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-7 col-lg-7 col-xl-8">
+                            <!--============ Section Title===========================================================-->
+            
+                            <!--end section-title-->
+                            <div id="messaging__chat-window" class="messaging__box">
+                                <div class="messaging__header">
+                                    <div class="float-left flex-row-reverse messaging__person">
+                                        <h5 id="cur_user" class="font-weight-bold"></h5>
+                                        <!-- <figure id="user_img" class="mr-4 messaging__image-person" data-background-image="assets/img/author-02.jpg"></figure> -->
+                                    </div>
+                                    <div class="float-right messaging__person">
+                                        <h5 class="mr-4">Admin</h5>
+                                        <figure id="messaging__user" class="messaging__image-person" data-background-image="assets/img/author-06.jpg"></figure>
+                                    </div>
+                                </div>
+                                <div  class="messaging__content" data-background-color="rgba(0,0,0,.05)">
+                                    <div id="display" class="messaging__main-chat">
+                            
+                                    </div>
+                                </div>
+                                <div class="messaging__footer">
+                                    <form class="form" id='post-message'>
+                                        <div class="input-group">
+                                            <input type="text" id="message" class="form-control mr-4" placeholder="Your Message">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit">Send <i class="fa fa-send ml-3"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-9-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
+            <!--end block-->
+        </section>
+        <!--end content-->
+
+        <!--*********************************************************************************************************-->
+        <!--************ FOOTER *************************************************************************************-->
+        <!--*********************************************************************************************************-->
+	</div>
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBEDfNcQRmKQEyulDN8nGWjLYPm8s4YB58&libraries=places"></script>
+	<script src="assets/js/selectize.min.js"></script>
+	<script src="assets/js/masonry.pkgd.min.js"></script>
+	<script src="assets/js/icheck.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+    <script src="getApis.js"></script>
+    <script src="AdminScript.js"></script>
+    <script>
+        $("#messaging__chat-window .messaging__content").scrollTop( $(".messaging__content")[0].scrollHeight );
+    </script>
+
+</body>
+</html>
